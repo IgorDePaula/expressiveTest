@@ -1,0 +1,8 @@
+<?php $this->layout('layout::default', ['title' => 'Greetings']) ?>
+
+<h2>Hello, <?= $this->e($target) ?></h2>
+<?php if($role): foreach($role as $r):?>
+<?php echo $r->getIdrole()?> -
+<?php echo $r->getNome()?>
+<br></hr>
+<?php endforeach; endif;?>
